@@ -10,7 +10,8 @@ function EditPost() {
   const [content, setContent] = useState('')
   const [category, setCategory] = useState('')
   const [errors, setErrors] = useState({})
-    useEffect(() => {
+
+  useEffect(() => {
     const loadPost = async () => {
       try {
         const res = await getPost(id)
@@ -26,7 +27,8 @@ function EditPost() {
 
     loadPost()
   }, [id])
-    const handleSave = async (status) => {
+
+  const handleSave = async (status) => {
     try {
       await updatePost(id, { title, content, category, status })
       navigate('/')
@@ -38,7 +40,8 @@ function EditPost() {
       }
     }
   }
-    return (
+
+  return (
     <div>
       <h2>Edit Post</h2>
 

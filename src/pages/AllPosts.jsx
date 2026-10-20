@@ -12,6 +12,7 @@ const tabs = [
 function AllPosts() {
   const [posts, setPosts] = useState([])
   const [activeTab, setActiveTab] = useState('publish')
+
   const loadPosts = async () => {
     try {
       const res = await getPosts(100, 0)
@@ -26,7 +27,7 @@ function AllPosts() {
     loadPosts()
   }, [])
 
-    const handleThrash = async (post) => {
+  const handleThrash = async (post) => {
     try {
       await updatePost(post.id, {
         title: post.title,
@@ -40,9 +41,10 @@ function AllPosts() {
       alert('Gagal memindahkan ke trash')
     }
   }
-    const filtered = posts.filter((p) => p.status === activeTab)
 
-      return (
+  const filtered = posts.filter((p) => p.status === activeTab)
+
+  return (
     <div>
       <h2>All Posts</h2>
 

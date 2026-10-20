@@ -8,7 +8,8 @@ function AddNew() {
   const [category, setCategory] = useState('')
   const [errors, setErrors] = useState({})
   const navigate = useNavigate()
-    const handleSave = async (status) => {
+
+  const handleSave = async (status) => {
     try {
       await createPost({ title, content, category, status })
       navigate('/')
@@ -20,7 +21,8 @@ function AddNew() {
       }
     }
   }
-    return (
+
+  return (
     <div>
       <h2>Add New</h2>
 

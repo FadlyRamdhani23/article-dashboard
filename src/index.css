@@ -28,6 +28,57 @@ nav a.active {
   font-weight: bold;
 }
 
+/* All Posts */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #1a73e8;
+  color: white;
+  border-color: #1a73e8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #fafafa;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.icon-btn:hover {
+  color: #1a73e8;
+}
+
+/* Add New dan Edit */
 .form-group {
   margin-bottom: 16px;
 }
@@ -67,6 +118,7 @@ nav a.active {
   border-color: #1a73e8;
 }
 
+/* Preview */
 .blog-card {
   background: white;
   border: 1px solid #ddd;
