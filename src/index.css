@@ -27,3 +27,42 @@ nav a.active {
   color: #1a73e8;
   font-weight: bold;
 }
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.error {
+  color: #d93025;
+  font-size: 13px;
+  margin: 4px 0 0;
+}
+
+.btn {
+  padding: 8px 20px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #1a73e8;
+  color: white;
+  border-color: #1a73e8;
+}
