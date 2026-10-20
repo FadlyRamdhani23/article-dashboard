@@ -66,3 +66,51 @@ nav a.active {
   color: white;
   border-color: #1a73e8;
 }
+
+.blog-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.blog-card h3 {
+  margin: 0 0 6px;
+}
+
+.blog-meta {
+  color: #777;
+  font-size: 13px;
+  margin: 0 0 12px;
+}
+
+.blog-content {
+  margin: 0;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.pagination {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #1a73e8;
+  color: white;
+  border-color: #1a73e8;
+}
+
+.pagination button:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
